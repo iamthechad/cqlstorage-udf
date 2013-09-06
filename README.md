@@ -4,6 +4,10 @@
 
 Currently, `CqlStorage` has an apparent issue with loading CQL3 table data. This problem is seen with Cassandra 1.2.8 and Pig 0.11.1.
 
+The following JIRAs are open for this issue:
+* https://issues.apache.org/jira/browse/CASSANDRA-5941
+* https://issues.apache.org/jira/browse/CASSANDRA-5867
+
 Loading a data structure seems to work:
 
     data = LOAD 'cql://bookdata/books' USING CqlStorage();
